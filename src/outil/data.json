@@ -1,0 +1,201 @@
+[
+    {
+        "nom": "liuyan",
+        "uvs": [
+            {
+                "uv": "GE37",
+                "type": "Cours",
+                "day": "LUNDI",
+                "begin": "14:15",
+                "end": "16:15",
+                "room": "RB110   ",
+                "group": "Groupe 1"
+            },
+            {
+                "uv": "GE37",
+                "type": "TD",
+                "day": "VENDREDI",
+                "begin": "10:15",
+                "end": "13:15",
+                "room": "RO128   ",
+                "group": "Groupe 7"
+            },
+            {
+                "uv": "LO22",
+                "type": "Cours",
+                "day": "MARDI",
+                "begin": "10:15",
+                "end": "12:15",
+                "room": "FA106   ",
+                "group": "Groupe 1"
+            },
+            {
+                "uv": "LO22",
+                "type": "TD",
+                "day": "MERCREDI",
+                "begin": "10:15",
+                "end": "12:15",
+                "room": "FA405   ",
+                "group": "Groupe 1"
+            },
+            {
+                "uv": "LO22",
+                "type": "TP",
+                "day": "MERCREDI",
+                "begin": "16:30",
+                "end": "18:30",
+                "room": "FB104   ",
+                "group": "Groupe 2 (semaine B)"
+            },
+            {
+                "uv": "SR03",
+                "type": "Cours",
+                "day": "MERCREDI",
+                "begin": "14:15",
+                "end": "16:15",
+                "room": "FA104   ",
+                "group": "Groupe 1"
+            },
+            {
+                "uv": "SR03",
+                "type": "TD",
+                "day": "LUNDI",
+                "begin": "10:15",
+                "end": "13:15",
+                "room": "FA506   ",
+                "group": "Groupe 1"
+            }
+        ]
+    },
+    {
+        "nom": "jbarthel",
+        "uvs": [
+            {
+                "uv": "FQ01",
+                "type": "Cours",
+                "day": "SAMEDI",
+                "begin": "09:00",
+                "end": "12:00",
+                "room": "FA100   ",
+                "group": "Groupe 1"
+            },
+            {
+                "uv": "FQ01",
+                "type": "TD",
+                "day": "VENDREDI",
+                "begin": "16:30",
+                "end": "18:30",
+                "room": "FA108   ",
+                "group": "Groupe 2"
+            },
+            {
+                "uv": "IA02",
+                "type": "Cours",
+                "day": "MARDI",
+                "begin": "08:00",
+                "end": "10:00",
+                "room": "FA201   ",
+                "group": "Groupe 1"
+            },
+            {
+                "uv": "IA02",
+                "type": "TD",
+                "day": "MERCREDI",
+                "begin": "10:15",
+                "end": "12:15",
+                "room": "FA404   ",
+                "group": "Groupe 2"
+            },
+            {
+                "uv": "IA02",
+                "type": "TP",
+                "day": "LUNDI",
+                "begin": "16:30",
+                "end": "18:30",
+                "room": "FB100   ",
+                "group": "Groupe 2 (semaine B)"
+            },
+            {
+                "uv": "LA14",
+                "type": "Cours",
+                "day": "JEUDI",
+                "begin": "13:00",
+                "end": "14:00",
+                "room": "FA201   ",
+                "group": "Groupe 1"
+            },
+            {
+                "uv": "LA14",
+                "type": "TD",
+                "day": "LUNDI",
+                "begin": "14:15",
+                "end": "16:15",
+                "room": "FA413   ",
+                "group": "Groupe 3"
+            },
+            {
+                "uv": "LO21",
+                "type": "Cours",
+                "day": "MERCREDI",
+                "begin": "14:00",
+                "end": "16:00",
+                "room": "RB110   ",
+                "group": "Groupe 1"
+            },
+            {
+                "uv": "LO21",
+                "type": "TD",
+                "day": "LUNDI",
+                "begin": "08:00",
+                "end": "12:00",
+                "room": "RO226   ",
+                "group": "Groupe 1"
+            },
+            {
+                "uv": "NF17",
+                "type": "Cours",
+                "day": "VENDREDI",
+                "begin": "08:00",
+                "end": "10:00",
+                "room": "FA104   ",
+                "group": "Groupe 1"
+            },
+            {
+                "uv": "NF17",
+                "type": "TD",
+                "day": "VENDREDI",
+                "begin": "13:15",
+                "end": "16:15",
+                "room": "FB100   ",
+                "group": "Groupe 5"
+            },
+            {
+                "uv": "SY02",
+                "type": "Cours",
+                "day": "VENDREDI",
+                "begin": "10:15",
+                "end": "12:15",
+                "room": "FA201   ",
+                "group": "Groupe 2"
+            },
+            {
+                "uv": "SY02",
+                "type": "TD",
+                "day": "MERCREDI",
+                "begin": "08:00",
+                "end": "10:00",
+                "room": "FA404   ",
+                "group": "Groupe 3"
+            },
+            {
+                "uv": "SY02",
+                "type": "TP",
+                "day": "LUNDI",
+                "begin": "16:30",
+                "end": "18:30",
+                "room": "FB215   ",
+                "group": "Groupe 2 (semaine A)"
+            }
+        ]
+    }
+]

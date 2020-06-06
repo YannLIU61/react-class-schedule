@@ -2,13 +2,12 @@ import React, { Component } from 'react'
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../App.css';
 import { Redirect } from "react-router-dom";
-import DataFormator from './outil/DataFormator'
 export class LoginComp extends Component {
 
     state = {
         user: '',
         remember: true,
-        uvs: '',
+        uvs: [],
         isLoggIn: false
     }
 
@@ -25,20 +24,28 @@ export class LoginComp extends Component {
 
     handleLogin = (e) => {
         e.preventDefault()
-
-        fetch(`/Edt_ent_rest/myedt/result/?login=${this.state.user}`)
-            .then(response => response.json())
-            .then(result => {
-                if (result.length === 0) {
-                    alert("User Login exist pas!")
-                } else {
-                   console.log(DataFormator(result));
-                    this.setState({
-                        uvs: result,
-                        isLoggIn: true
-                    })
-                }
+        if (localStorage.getItem('user') === this.state.user) {
+            this.setState({
+                isLoggIn: true
             })
+        } else {
+            fetch(`/Edt_ent_rest/myedt/result/?login=${this.state.user}`)
+                .then(response => response.json())
+                .then(result => {
+                    if (result.length === 0) {
+                        alert("User Login exist pas!")
+                    } else {
+                        let res = [{ nom: this.state.user, uvs: result }]
+                        this.setState({
+                            uvs: res,
+                            isLoggIn: true
+                        })
+                        localStorage.setItem('user', this.state.user)
+                        localStorage.setItem('uvs', JSON.stringify(this.state.uvs))
+                    }
+                })
+        }
+
     }
 
 
@@ -46,7 +53,7 @@ export class LoginComp extends Component {
 
     render() {
         if (this.state.isLoggIn) {
-            return (<Redirect to={{ pathname: '/home', state: { uvs: DataFormator(this.state.uvs) , user: this.state.user} }} />);
+            return (<Redirect to={{ pathname: '/home' }} />);
         } else {
             return (
                 <div className="App">

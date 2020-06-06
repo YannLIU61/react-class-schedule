@@ -9,7 +9,7 @@ function App() {
     <Switch>
       <Route exact path='/' component={LoginComp} />
       <Route path="/sign-in" component={LoginComp} />
-      <Route path="/home" component={HomePageComp} />
+      <Route exact path="/home" component={HomePageComp} />
     </Switch>
   </Router>
   );
