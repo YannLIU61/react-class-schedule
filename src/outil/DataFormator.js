@@ -19,6 +19,7 @@ function TimeFormator(_time, _day) {
 
 export default function DataFormator(datas) {
     let res = [];
+    let id = 1;
     for (let data of datas) {
         for (let uvs of data["uvs"]) {
             res.push(
@@ -29,10 +30,12 @@ export default function DataFormator(datas) {
                     EndTime: TimeFormator(uvs.end, uvs.day),
                     Location: uvs.room,
                     Description: uvs.group,
-                    RecurrenceRule: 'FREQ=WEEKLY;INTERVAL=1'
+                    RecurrenceRule: 'FREQ=WEEKLY;INTERVAL=1',
+                    OwnerId:id
                 }
             )
         }
+        id++;
     }
     return res;
     // return datas.map((data) => {

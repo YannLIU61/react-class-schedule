@@ -54,23 +54,25 @@ export class Manage extends Component {
     }
     handleSubmit = (e) => {
         e.preventDefault()
-
-        fetch(`/Edt_ent_rest/myedt/result/?login=${this.state.newuser}`)
-            .then(response => response.json())
-            .then(result => {
-                if (result.length === 0) {
-                    alert("User Login exist pas!")
-                } else {
-                    let newuvs = { nom: this.state.newuser, uvs: result }
-                    this.state.uvs.push(newuvs)
-                    this.setState({
-                        uvs: this.state.uvs
-                    })
-                    localStorage.setItem('uvs', JSON.stringify(this.state.uvs))
-                    window.location.reload();
-                }
-            })
-
+        if (this.state.uvs.length > 3) {
+            alert("Sorry, you can only have four agenda max!!!")
+        } else {
+            fetch(`/Edt_ent_rest/myedt/result/?login=${this.state.newuser}`)
+                .then(response => response.json())
+                .then(result => {
+                    if (result.length === 0) {
+                        alert("User Login exist pas!")
+                    } else {
+                        let newuvs = { nom: this.state.newuser, uvs: result }
+                        this.state.uvs.push(newuvs)
+                        this.setState({
+                            uvs: this.state.uvs
+                        })
+                        localStorage.setItem('uvs', JSON.stringify(this.state.uvs))
+                        window.location.reload();
+                    }
+                })
+        }
 
     }
     render() {
