@@ -107,7 +107,7 @@ export class Manage extends Component {
                                             return (
                                                 <tr key={index}>
                                                     <td>{user['nom']}</td>
-                                                    <td><button onClick={this.handleDelete.bind(this, user['nom'])} type="button" className="btn btn-danger btn-sm"  >Delete</button></td>
+                                                    <td><button onClick={() => { if (window.confirm('Are you sure you wish to delete this item?')) this.handleDelete(user['nom']) }} type="button" className="btn btn-danger btn-sm"  >Delete</button></td>
                                                 </tr>
                                             );
                                         })}
